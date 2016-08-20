@@ -3,7 +3,7 @@
 //  Table1to50
 //
 //  Created by Diane Hoffstetter on 8/17/16.
-//  Copyright © 2016 Dumb Blonde Software. All rights reserved.
+//  Copyright © 2016 Dumb Blonde Software. All rights reserved..
 //
 
 import UIKit
