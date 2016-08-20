@@ -1,0 +1,2 @@
+Changed:
+  — Removed broken outlet causing app to crash at build time

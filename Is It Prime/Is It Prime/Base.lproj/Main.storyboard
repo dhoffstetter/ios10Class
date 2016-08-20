@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_It_Prime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t8-zv-J56">
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjG-eb-W9W">
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcF-dr-KNx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-c8-oKV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="7ZJ-8a-YM4"/>
+                                    <constraint firstAttribute="height" constant="30" id="FRa-jX-kNw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-fE-lV6">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4t8-zv-J56" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="23T-0U-4zZ"/>
+                            <constraint firstItem="ubq-fE-lV6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gq-zg-itS"/>
+                            <constraint firstItem="ubq-fE-lV6" firstAttribute="top" secondItem="LjG-eb-W9W" secondAttribute="bottom" constant="43" id="Dew-rx-E1r"/>
+                            <constraint firstItem="LjG-eb-W9W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J3G-9U-Qa8"/>
+                            <constraint firstItem="tpb-c8-oKV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ts2-y7-QJ1"/>
+                            <constraint firstItem="LjG-eb-W9W" firstAttribute="top" secondItem="tpb-c8-oKV" secondAttribute="bottom" constant="55" id="Vee-fl-VpB"/>
+                            <constraint firstItem="tpb-c8-oKV" firstAttribute="top" secondItem="4t8-zv-J56" secondAttribute="bottom" constant="30" id="y1R-I4-uys"/>
+                            <constraint firstItem="4t8-zv-J56" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zb4-Vy-UcL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterNumberTextField" destination="tpb-c8-oKV" id="ASJ-Eb-g0p"/>
+                        <outlet property="resultsLabel" destination="ubq-fE-lV6" id="8rp-aZ-gAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
