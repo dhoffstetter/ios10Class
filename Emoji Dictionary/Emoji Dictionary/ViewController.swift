@@ -14,6 +14,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
   
   var emojis = ["😀","😱","🍷","😈","🐮","🎧"]
   
+  var emoji = Emoji()
+  
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -38,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
     let emoji = emojis[indexPath.row]
     performSegue(withIdentifier: "moveSegue", sender: emoji)
   }
