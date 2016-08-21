@@ -165,7 +165,10 @@ if username == "dianeho" {
 
 }
 
+var favNum = [7, 3, 12, 85, 55]
 
+favNum.popLast()
+favNum
 
 
 
