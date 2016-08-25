@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41A8FE31D6E86D60000A51F /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41A8FE21D6E86D60000A51F /* Emoji.swift */; };
 		C421C7441D68B32800792921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C421C7431D68B32800792921 /* AppDelegate.swift */; };
 		C421C7461D68B32800792921 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C421C7451D68B32800792921 /* ViewController.swift */; };
 		C421C7491D68B32800792921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C421C7471D68B32800792921 /* Main.storyboard */; };
 		C421C74B1D68B32800792921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C421C74A1D68B32800792921 /* Assets.xcassets */; };
 		C421C74E1D68B32800792921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C421C74C1D68B32800792921 /* LaunchScreen.storyboard */; };
 		C421C7561D6953D400792921 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C421C7551D6953D300792921 /* DefinitionViewController.swift */; };
-		C421C7581D69582B00792921 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C421C7571D69582B00792921 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41A8FE21D6E86D60000A51F /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		C421C7401D68B32800792921 /* Emoji Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C421C7431D68B32800792921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C421C7451D68B32800792921 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		C421C74D1D68B32800792921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C421C74F1D68B32800792921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C421C7551D6953D300792921 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
-		C421C7571D69582B00792921 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,12 @@
 			children = (
 				C421C7431D68B32800792921 /* AppDelegate.swift */,
 				C421C7451D68B32800792921 /* ViewController.swift */,
+				C41A8FE21D6E86D60000A51F /* Emoji.swift */,
 				C421C7551D6953D300792921 /* DefinitionViewController.swift */,
 				C421C7471D68B32800792921 /* Main.storyboard */,
 				C421C74A1D68B32800792921 /* Assets.xcassets */,
 				C421C74C1D68B32800792921 /* LaunchScreen.storyboard */,
 				C421C74F1D68B32800792921 /* Info.plist */,
-				C421C7571D69582B00792921 /* Emoji.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 			files = (
 				C421C7461D68B32800792921 /* ViewController.swift in Sources */,
 				C421C7561D6953D400792921 /* DefinitionViewController.swift in Sources */,
-				C421C7581D69582B00792921 /* Emoji.swift in Sources */,
+				C41A8FE31D6E86D60000A51F /* Emoji.swift in Sources */,
 				C421C7441D68B32800792921 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +310,7 @@
 				C421C7541D68B32800792921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

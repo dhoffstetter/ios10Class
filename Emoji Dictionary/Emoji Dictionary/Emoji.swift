@@ -2,15 +2,15 @@
 //  Emoji.swift
 //  Emoji Dictionary
 //
-//  Created by Diane Hoffstetter on 8/20/16.
+//  Created by Diane Hoffstetter on 8/24/16.
 //  Copyright © 2016 Dumb Blonde Software. All rights reserved.
 //
 
-import UIKit
-
-class Emoji: NSObject {
+class Emoji {
   
-  public var emoji : String = ""
-  public var definition : String = ""
-
+  var stringEmoji = ""
+  var definition = ""
+  var category = ""
+  var birthYear = 0
+  
 }
